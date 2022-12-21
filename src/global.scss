@@ -13,14 +13,10 @@ body {
   height: 100vh;
   transition: 1s;
 }
-.amkodor-page {
+.amkodor-page, .clothes-page  {
+  position: relative;
   width: 100vw;
   background-color: #8DBDBA;
-  height: 100vh;
-}
-.clothes-page {
-  width: 100vw;
-  background-color: green;
   height: 100vh;
 }
 
@@ -47,7 +43,7 @@ body {
   color: #F5F5F5;
 }
 
-.amkodor-laptop {
+.amkodor-laptop, .clothes-laptop {
   position: absolute;
   top: 15vh;
   right: 5vw;
@@ -65,7 +61,7 @@ body {
   align-items: flex-start;
   width: 46vw;
   height: 48vh;
-  background: rgba(00, 37, 23, 0.2);
+  background: rgba(00, 37, 23, 0.3);
   backdrop-filter: blur(7px);
   color: #F5F5F5;
 }
@@ -134,3 +130,9 @@ body {
 .info-section__elem3 {
   border-right: none;
 }
+
+///////////////////////////////clothes-page////////////////////////////////////
+.clothes-page {
+  background-color: #8675BA;
+}
+
