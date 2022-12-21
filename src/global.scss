@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+.wrapper{
+  display: flex;
+  width: 200vw;
+  height: 100vh;
+  transition: 1s;
+}
+.amkodor-page {
+  width: 100vw;
+  background-color: #8DBDBA;
+  height: 100vh;
+}
+.clothes-page {
+  width: 100vw;
+  background-color: green;
+  height: 100vh;
+}
+
+.move {
+  margin-left: -100vw;
+  transition: 1s;
+}
+
+.circule{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: aqua;
+}
+
+.amkodor-laptop {
+  position: absolute;
+  top: 15vh;
+  right: 5vw;
+  width: 70vw;
+}
