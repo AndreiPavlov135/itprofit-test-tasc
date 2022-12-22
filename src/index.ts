@@ -1,20 +1,28 @@
 import "./global.scss";
 
-const btnRight = document.querySelector("#btnRight") as HTMLElement;
-const btnLeft = document.querySelector("#btnLeft") as HTMLElement;
+const btnRight = document.querySelector("#btnRight") as HTMLButtonElement;
+const btnLeft = document.querySelector("#btnLeft") as HTMLButtonElement;
 const wrapper = document.querySelector(".wrapper") as HTMLElement;
+const clothesPage = document.querySelector(".clothes-page") as HTMLElement;
 
-///change pages with scroll and click
+///change pages with scroll, click and smooth change bg-color
+
 btnRight.addEventListener("click", () => {
   wrapper.classList.toggle("move");
+  clothesPage.classList.toggle("change-bg");
 });
 
 btnLeft.addEventListener("click", () => {
   wrapper.classList.toggle("move");
+  clothesPage.classList.toggle("change-bg");
 });
 
 document.addEventListener("wheel", (e) => {
-  e.deltaY === 100
-    ? wrapper?.classList.add("move")
-    : wrapper?.classList.remove("move");
+  if (e.deltaY === 100) {
+    wrapper.classList.add("move");
+    clothesPage.classList.toggle("change-bg");
+  } else {
+    wrapper.classList.remove("move");
+    clothesPage.classList.toggle("change-bg");
+  }
 });
