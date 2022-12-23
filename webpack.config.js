@@ -8,7 +8,7 @@ const baseConfig = {
   mode: "development",
   output: {
     filename: "index.[contenthash].js",
-    assetModuleFilename: path.join("assets", "[name].[contenthash][ext]"),
+    assetModuleFilename: "assets/[name][contenthash][ext]",
     path: path.resolve(__dirname, "dist"),
   },
   module: {
@@ -29,9 +29,6 @@ const baseConfig = {
       {
         test: /\.(png|jpg|jpeg|gif)$/i,
         type: "asset/resource",
-        generator: {
-          filename: path.join("images", "[name].[contenthash][ext]"),
-        },
       },
       {
         test: /\.svg$/,
