@@ -13,7 +13,7 @@ class Circle {
     circle.style.height = `${height}px`;
     circle.style.zIndex = `${zIndex}`;
 
-    startX < 1800
+    startX < 1440
       ? circle.classList.add("circle-amcodor")
       : circle.classList.add("circle-clothes");
 

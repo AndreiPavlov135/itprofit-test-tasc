@@ -32,8 +32,8 @@ document.addEventListener("wheel", (e) => {
 
 const circle1 = new Circle();
 circle1.creatCircle(100, 650, "200", "200");
-circle1.creatCircle(1400, 600, "300", "300");
-circle1.creatCircle(400, 100, "250", "250", 2);
-circle1.creatCircle(1850, 100, "200", "200");
-circle1.creatCircle(2600, 25, "150", "150", 2);
-circle1.creatCircle(3000, 600, "200", "200", 2);
+circle1.creatCircle(300, 100, "250", "250", 2);
+circle1.creatCircle(1100, 450, "300", "300");
+circle1.creatCircle(1500, 100, "200", "200");
+circle1.creatCircle(2000, 25, "150", "150", 2);
+circle1.creatCircle(2500, 600, "200", "200", 2);
